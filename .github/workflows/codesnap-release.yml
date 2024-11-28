@@ -1,0 +1,29 @@
+name: "Update formula when a new version of CodeSnap is released"
+
+on:
+  repository_dispatch:
+    types: [release]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Update formula
+        run: python scripts/update_formula.py ${{ github.event.client_payload.version }} ${{ github.event.client_payload.formula_name }} "${{ github.event.client_payload.formula_desc }}"
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: "[Release] Update ${{ github.event.client_payload.formula_name }} to ${{ github.event.client_payload.version }}"
+          push: true
