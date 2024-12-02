@@ -1,20 +1,20 @@
 class Codesnap < Formula
   desc "Pure Rust tool to generate beautiful code snapshots"
   homepage "https://github.com/mistricky/codesnap"
-  version "0.7.3"
+  version "0.7.4"
     
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/mistricky/codesnap/releases/download/v0.7.3/codesnap-aarch64-apple-darwin.tar.gz"
-        sha256 "5677e17213c1bc6b86f70e8c4b1aed8e7a937cc1ba8a9136a0c4cb33dfc8b58a"
+        url "https://github.com/mistricky/codesnap/releases/download/v0.7.4/codesnap-aarch64-apple-darwin.tar.gz"
+        sha256 "20cfaadee7d68f161820e61c01102b23dc88f3cfb5abaefccaaf2d1d7a518163"
     
         def install
           bin.install "codesnap"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/mistricky/codesnap/releases/download/v0.7.3/codesnap-x86_64-apple-darwin.tar.gz"
-        sha256 "ca8048ef29d25669b3095cd911665e15d63bbee47b7ae8f9acf457fb096790d0"
+        url "https://github.com/mistricky/codesnap/releases/download/v0.7.4/codesnap-x86_64-apple-darwin.tar.gz"
+        sha256 "8de681ed82e9a7822be42d23c0256092a1446b279e6d0748e3308c084b32d272"
     
         def install
           bin.install "codesnap"
@@ -26,16 +26,16 @@ class Codesnap < Formula
 
     on_linux do
       if Hardware::CPU.arm?
-        url "https://github.com/mistricky/codesnap/releases/download/v0.7.3/codesnap-aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "8a98ce59a2ad9c10f36a3dd8c5f6ec1bf52bc58e829faf55bcdb25d95a040f72"
+        url "https://github.com/mistricky/codesnap/releases/download/v0.7.4/codesnap-aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "9c8194e4003674f1f24ee30b200337fd1e299b13f0ece9b39c0f59a629190b80"
     
         def install
           bin.install "codesnap"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/mistricky/codesnap/releases/download/v0.7.3/codesnap-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "13e7662df2c472fedd9931b7804d63365f0b6226d285e14ebb5b6ba693db0571"
+        url "https://github.com/mistricky/codesnap/releases/download/v0.7.4/codesnap-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "0b46d28c88668d822984408ce291fef24ab988646774d37065aa5cba8a7fd071"
     
         def install
           bin.install "codesnap"
