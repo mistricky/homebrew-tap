@@ -14,7 +14,7 @@ class Codesnap < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/mistricky/codesnap/releases/download/v0.8.0/codesnap-x86_64-apple-darwin.tar.gz"
-      sha256 "d682c6484986f0604edbe018d30e9a53d5fb6bd24e79a0c2eae97fe8ef7fed8e"
+      sha256 "adb793e33f135a2be7882937e3ffc778ecacbf0da279f276214d8ae9f787d718"
   
       def install
         bin.install "codesnap"
