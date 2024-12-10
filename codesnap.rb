@@ -6,7 +6,7 @@ class Codesnap < Formula
     on_macos do
       if Hardware::CPU.arm?
         url "https://github.com/mistricky/codesnap/releases/download/v0.8.0/codesnap-aarch64-apple-darwin.tar.gz"
-        sha256 "b62f27aa09ce86c04af55670a804842a897b58b4201f783bfd614de200207c14"
+        sha256 "7dd9ebb5fc6bbc9cd199406e9f6139d6f1667b7c8d0294ec07e9771db926ccfd"
     
         def install
           bin.install "codesnap"
@@ -14,7 +14,7 @@ class Codesnap < Formula
       end
       if Hardware::CPU.intel?
         url "https://github.com/mistricky/codesnap/releases/download/v0.8.0/codesnap-x86_64-apple-darwin.tar.gz"
-        sha256 "d682c6484986f0604edbe018d30e9a53d5fb6bd24e79a0c2eae97fe8ef7fed8e"
+        sha256 "adb793e33f135a2be7882937e3ffc778ecacbf0da279f276214d8ae9f787d718"
     
         def install
           bin.install "codesnap"
@@ -27,7 +27,7 @@ class Codesnap < Formula
     on_linux do
       if Hardware::CPU.arm?
         url "https://github.com/mistricky/codesnap/releases/download/v0.8.0/codesnap-aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "e86e1e48a00010851e1e8812b9fd14772613bc3873f9d3a9b52822e4cfc8ed3f"
+        sha256 "8d3de7cf271a0e180d9894cddb6f3f9073fc8082038ee5cfc8d3010aabb72c3b"
     
         def install
           bin.install "codesnap"
@@ -35,7 +35,7 @@ class Codesnap < Formula
       end
       if Hardware::CPU.intel?
         url "https://github.com/mistricky/codesnap/releases/download/v0.8.0/codesnap-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "bd3ea9a4d511900f1e947967ea10edd2c1b184d214a9efe45f156579ff692690"
+        sha256 "c634cbab25495367830952ef767a08c3fe71f326921f9ee7d6d92ec6bb75f76c"
     
         def install
           bin.install "codesnap"
