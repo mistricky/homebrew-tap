@@ -6,7 +6,7 @@ class Codesnap < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mistricky/codesnap/releases/download/v0.8.0/codesnap-aarch64-apple-darwin.tar.gz"
-      sha256 "b62f27aa09ce86c04af55670a804842a897b58b4201f783bfd614de200207c14"
+      sha256 "7dd9ebb5fc6bbc9cd199406e9f6139d6f1667b7c8d0294ec07e9771db926ccfd"
   
       def install
         bin.install "codesnap"
