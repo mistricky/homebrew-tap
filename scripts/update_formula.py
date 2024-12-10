@@ -77,10 +77,10 @@ def get_rust_format_formula_data(): return {
 }
 
 
-is_sematic_version: Final[bool] = search("^v[0-9]\.[0-9]\.[0-9]$", version)
+is_semantic_version: Final[bool] = search("^v[0-9]\.[0-9]\.[0-9]$", version)
 
-if not is_sematic_version:
-    panic("Not valid sematic version format")
+if not is_semantic_version:
+    panic("Not valid semantic version format")
 
 
 write_formula(get_formula(get_rust_format_formula_data()))
